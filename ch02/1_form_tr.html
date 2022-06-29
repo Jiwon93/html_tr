@@ -20,18 +20,17 @@
 </head>
 
 <body>
-	<form action="./result.html" id="form">
+	<form method="post" action="./result.html" id="member">
 		<h1 align="center">회원가입</h1>
 		<h5 align="right">✔ 표시 항목은 필수 입력 항목입니다.</h5>
-		<h3>■ 기본정보</h3>
+		<h3>📋 기본정보</h3>
 		<table width="100%"> 
 			<tr>
 				<td style="background-color:#787878; color:white;" width="200px" align="center">✔ 이름</td>
 				<td>
 					<input type="text" name="name" id="name">
 					<p style="color:#6B593E;">
-						<img alt="" src="../image/file.png" width="20px" height="20px">
-						스토리움 이용 시 본인 인증(휴대폰 인증, 아이핀 인증)이 
+						💬스토리움 이용 시 본인 인증(휴대폰 인증, 아이핀 인증)이 
 						필요할 수 있으므로, 실명으로 적어주시기 바랍니다.
 					</p>
 				</td>
@@ -43,8 +42,7 @@
 					<input type="button" name="Idcheck" id="Idcheck" value="✔ 아이디중복확인" onclick="">
 					<br>
 					<p style="color:#6B593E;">
-						<img alt="" src="../image/file.png" width="20px" height="20px">
-						6~16자까지 영문자(소문자), 숫자 사용 가능합니다.
+						💬6~16자까지 영문자(소문자), 숫자 사용 가능합니다.
 					</p>
 				</td>
 			</tr>
@@ -54,8 +52,7 @@
 					<input type="password" name="Pw" id="Pw">
 					<br>
 					<p style="color:#6B593E;">
-						<img alt="" src="../image/file.png" width="20px" height="20px">
-						8~16자까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다.
+						💬8~16자까지 영문자(대소문자), 숫자 및 특수문자 사용 가능합니다.
 						<br>&nbsp;&nbsp;&nbsp;&nbsp;비밀번호는 8~16자의 영문 대/소문자, 숫자, 특수문자중 3개 이상의 
 							조합으로 입력해주세요.
 						<br>&nbsp;&nbsp;&nbsp;&nbsp;3자리 연속 이어지는 문자(또는 숫자), 3자리 같은 문자(또는 숫자), 
@@ -73,12 +70,11 @@
 				<td style="background-color:#787878; color:white;" align="center">✔ 생년월일/성별</td>
 				<td>
 					<input type="text" name="calendar" id="calendar">
-					<img alt="" src="../image/cal.png" width="20px" height="20px">
+					📅
 					<input type="radio" name="male" id="male">남자
 					<input type="radio" name="female" id="female">여자
 					<p style="color:#6B593E;">
-						<img alt="" src="../image/file.png" width="20px" height="20px">
-						반드시 주민등록상 생년월일을 기입해주시기 바랍니다.
+						💬반드시 주민등록상 생년월일을 기입해주시기 바랍니다.
 					</p>
 				</td>
 			</tr>
@@ -134,8 +130,7 @@
 					-
 					<input type="text" name="lasttel" id="lasttel">
 					<p style="color:#6B593E;">
-						<img alt="" src="../image/file.png" width="20px" height="20px">
-						연락처는 둘 중 하나만 입력해도 됩니다.
+						💬연락처는 둘 중 하나만 입력해도 됩니다.
 					</p>
 				</td>
 			</tr>
@@ -143,7 +138,7 @@
 				<td style="background-color:#787878; color:white;" align="center">✔ 우편번호</td>
 				<td>
 					<input type="text" name="postcode" id="postcode">
-					<input type="button" name="postbtn" id="postbtn" value="주소검색" onclick="">
+					<input type="button" name="postbtn" id="postbtn" value="🔍 주소검색" onclick="">
 				</td>
 			</tr>
 			<tr>
@@ -164,7 +159,7 @@
 			</tr>
 		</table>
 		<br><br>
-		<h3>■ 작가정보</h3>
+		<h3>📋 작가정보</h3>
 		<table width="100%">
 			<tr>
 				<td style="background-color:#787878; color:white;" width="200px" align="center">프로필이미지</td>
@@ -177,8 +172,7 @@
 				<td>
 					<input type="text" name="nickname" id="nickname">
 					<p style="color:#6B593E;">
-						<img alt="" src="../image/file.png" width="20px" height="20px">
-						필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)
+						💬필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)
 					</p>
 				</td>
 			</tr>
@@ -193,8 +187,7 @@
 				<td>
 					<textarea rows="10" cols="100" name="awards" id="awards"></textarea>
 					<p style="color:#6B593E;">
-						<img alt="" src="../image/file.png" width="20px" height="20px">
-						여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.
+						💬여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.
 					</p>
 				</td>
 			</tr>
@@ -203,12 +196,11 @@
 				<td>
 					<input type="text" name="storytitle" id="storytitle" placeholder="스토리 제목을 입력하세요">
 					<input type="text" name="storyrole" id="storyrole" placeholder="해당 스토리의 역할을 입력하세요">
-					<input type="button" name="S-delete" id="S-delete" value="삭제" onclick="">
+					<input type="button" name="S-delete" id="S-delete" value="🗑삭제" onclick="">
 					<br>
 					<input type="button" name="S-plus" id="S-plus" value="+추가" onclick="">
 					<p style="color:#6B593E;">
-						<img alt="" src="../image/file.png" width="20px" height="20px">
-						본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다.
+						💬본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다.
 						<br>&nbsp;&nbsp;&nbsp;&nbsp;(역할은 메인작가, 공통작가, 보조작가, 각색, 각본 등 
 						본인 역할을 정확히 기재해 주시기 바랍니다.)
 					</p>
@@ -223,7 +215,7 @@
 			</tr>
 		</table>
 		<br><br>
-		<h3>■ 이용자정보</h3>
+		<h3>📋 이용자정보</h3>
 		<table width="100%">
 			<tr>
 				<td style="background-color:#787878; color:white;" width="200px" align="center">✔ 소속(회사)</td>
@@ -246,8 +238,7 @@
 				<td>
 					<input type="file" name="file" id="file">
 					<p style="color:#6B593E;">
-						<img alt="" src="../image/file.png" width="20px" height="20px">
-						소속(회사)의 사업자등록증을 업로드해주시기바랍니다.
+						💬소속(회사)의 사업자등록증을 업로드해주시기바랍니다.
 						(이미지 파일만 업로드 가능/PDF파일 업로드 불가)
 					</p>
 				</td>
@@ -283,17 +274,13 @@
 				<td>
 					주요경력사항을 등록해 주시기 바랍니다.
 					<p style="color:#6B593E;">
-						<img alt="" src="../image/file.png" width="20px" height="20px">
-						(기간, 사업내용, 담당업무를 입력해 주시기 바랍니다)
+						💬(기간, 사업내용, 담당업무를 입력해 주시기 바랍니다)
 					</p>
-					<input type="text" name="from" id="from">
-					<img alt="" src="../image/file.png" width="20px" height="20px">
-					~
-					<input type="text" name="to" id="to">
-					<img alt="" src="../image/file.png" width="20px" height="20px">
+					<input type="text" name="from" id="from"> 📅 ~
+					<input type="text" name="to" id="to"> 📅
 					<input type="text" name="contents" id="contents" placeholder="사업내용을 입력해주세요">
 					<input type="text" name="business" id="business" placeholder="담당업무를 입력해주세요">
-					<input type="button" name="b-delete" id="b-delete" value="삭제" onclick="">
+					<input type="button" name="b-delete" id="b-delete" value="🗑삭제" onclick="">
 					<br>
 					<input type="button" name="b-plus" id="b-plus" value="+추가" onclick="">
 				</td>
@@ -307,8 +294,8 @@
 		/* validation */
 		function here() {
 			alert("가입을 진심으로 환영합니다!(로그인 화면으로 이동합니다.)");
-			document.getElementById("form").submit();
+			document.getElementById("member").submit();
 		}
-		</script>
+	</script>
 </body>
 </html>

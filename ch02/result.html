@@ -6,15 +6,14 @@
 	<title>로그인(Login)</title>
 		<style type="text/css">
 				table {
-  					margin-left:auto; 
-				    margin-right:auto;
+  					margin-right:auto; 
 				}
 				table, th, td {
 					border: 3px solid #EEEEEE;
 					border-collapse: collapse;
 				}
 				th, td {
-					padding: 10px;
+					padding: 50px;
 				}
 		</style>
 </head>
@@ -23,19 +22,30 @@
 	<h1>Login</h1>
 	<hr color="lightgray">
 	<br>
-	<form action="" name="" id="">
+	<form method="post" action="./1_form_tr.html" id="form">
 		<table>
 			<tr>
-				<td> 본인의 로그인 정보를 정확히 입력해 주시기 바랍니다.
-				<br>			
+				<td> <small>본인의 로그인 정보를 정확히 입력해 주시기 바랍니다.</small>
+				<br><br>
+				<img alt="" src="../image/man.png" width="20px" height="20px">			
 				<input type="text" name="idwrite" id="idwrite">
-				<br>	
+				<br>
+				<img alt="" src="../image/lock.png" width="20px" height="20px">	
 				<input type="password" name="passwordwrite" id="passwordwrite">
+				<br><br>
+				<input type="button" name="login" id="login" value="로그인" onclick="">
+				<input type="button" name="join" id="join" value="회원가입" onclick="here();">
 				</td>
 			</tr>
 		</table>
 	</form>
-	
+	<script type="text/javascript">
+		/* validation */
+		function here() {
+			alert("회원가입 페이지로 이동합니다.");
+			document.getElementById("form").submit();
+		}
+	</script>
 
 </body>
 </html>
