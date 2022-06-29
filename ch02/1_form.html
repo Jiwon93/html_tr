@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>신지원</title>
+</head>
+
+<body>
+	<!-- <form method="post" action="./result.html"> -->
+	<!-- <form method="get" action="./result.html"> -->
+	<form action="./result.html" id="form">
+	
+		<!-- input 태그를 form 태그 안에 꼭꼭꼭 넣어야 한다. -->
+		<input type="text" name="id" placeholder="아이디" id="id">
+		<input type="password" name="password" placeholder="비밀번호" id="password">
+		<br>
+		<br>
+		<select name="gender">
+			<option value="">성별
+			<option value="남자">남자
+			<option value="여자">여자
+			<option value="기타">기타
+		</select>
+		&nbsp;&nbsp;
+		<select name="tel">
+			<option value="">통신사
+			<option value="SKT">SKT
+			<option value="KT">KT
+			<option value="LGT">LGT
+		</select>
+		&nbsp;&nbsp;
+		<select name="address">
+			<option value="">사는곳
+			<option value="서울">서울
+			<option value="경기도">경기도
+			<option value="인천">인천
+			<option value="지방">지방
+		</select>
+		<br><br>
+		<input type="checkbox" name="hobby">축구
+		<input type="checkbox" name="hobby1">농구
+		<input type="checkbox" name="hobby2">음악감상
+		<input type="checkbox" name="hobby3">독서
+		<input type="checkbox" name="hobby4">여행
+		<input type="checkbox" name="hobby5">맛집투어
+		<input type="checkbox" name="hobby6">사진찍기
+		<br><br>
+		<input type="radio" name="route">지인
+		<input type="radio" name="route">SNS
+		<input type="radio" name="route">신문
+		<input type="radio" name="route">잡지
+		<input type="radio" name="route">기타
+		<br><br>
+		<textarea rows="10" cols="50" name="contents" placeholder="자기소개"></textarea>
+		<input type="hidden" name="" value="">
+		<br><br>
+		<!-- <input type="submit"> -->
+		<input type="button" id="btnSave" value="제출" onclick="here();">
+	</form>
+	
+		<script type="text/javascript">
+		/* validation */
+		function here() {
+			/*alert("nickname: " + document.getElementById("nickname").value ); */
+			alert("complete!");
+			document.getElementById("form").submit();
+		}
+		</script>
+</body>
+</html>
+
+	<!-- 
+		-javascript와 jquary를 둘다 같이 사용해도 되는지?
+		-보통 id를 사용하면 name도 같이 사용하는지? 둘중 
+		하나만 사용해도 되는건지?
+	 -->
