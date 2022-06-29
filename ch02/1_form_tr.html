@@ -127,7 +127,6 @@
 				<input type="text">
 				-
 				<input type="text">
-				<br>
 				<p>
 					<img alt="" src="../image/file.png" width="20px" height="20px">
 					연락처는 둘 중 하나만 입력해도 됩니다.
@@ -136,7 +135,10 @@
 		</tr>
 		<tr>
 			<td>∨ 우편번호</td>
-			<td></td>
+			<td>
+				<input type="text" name="postcode">
+				<input type="button" id="postcode" value="주소검색" onclick="">
+			</td>
 		</tr>
 		<tr>
 			<td>∨ 주소</td>
@@ -144,7 +146,15 @@
 		</tr>
 		<tr>
 			<td>정보수신 여부</td>
-			<td></td>
+			<td>
+				<b>서비스 및 이벤트 소식, 지원사업 및 행사 정보 안내 수신여부</b>
+				<br><b>Email수신</b>
+				<input type="radio" name="agree">동의함
+				<input type="radio" name="disagree">동의하지 않음
+				<br><b>SMS수신</b>
+				<input type="radio" name="agree2">동의함
+				<input type="radio" name="disagree2">동의하지 않음
+			</td>
 		</tr>
 	</table>
 	<br><br>
@@ -152,21 +162,59 @@
 	<table>
 		<tr>
 			<td>프로필이미지</td>
+			<td>
+				<input type="button" id="profil" value="파일 선택" onclick="">
+				선택된 파일 없음
+			</td>
 		</tr>
 		<tr>
 			<td>∨ 필명</td>
+			<td>
+				<input type="text">
+				<p>
+					<img alt="" src="../image/file.png" width="20px" height="20px">
+					필명이 없으신 분들은 실명을 등록해 주시기 바랍니다.(작가정보에 노출 될 이름 입니다.)
+				</p>
+			</td>
 		</tr>
 		<tr>
 			<td>대표작</td>
+			<td>
+				<textarea rows="1" cols="100" name="major"></textarea>
+			</td>
 		</tr>
 		<tr>
 			<td>수상내역</td>
+			<td>
+				<textarea rows="10" cols="100" name="awards"></textarea>
+				<p>
+					<img alt="" src="../image/file.png" width="20px" height="20px">
+					여러 수상내역을 등록 시 콤마(,)로 구분하여 등록해 주시기 바랍니다.
+				</p>
+			</td>
 		</tr>
 		<tr>
 			<td>주요작품</td>
+			<td>
+				<textarea rows="1" cols="60" name="story" placeholder="스토리 제목을 입력하세요"></textarea>
+				<textarea rows="1" cols="40" name="storypart" placeholder="해당 스토리의 역할을 입력하세요"></textarea>
+				<input type="button" id="delete" value="삭제" onclick="">
+				<br>
+				<input type="button" id="plus" value="+추가" onclick="">
+				<p>
+					<img alt="" src="../image/file.png" width="20px" height="20px">
+					본인 참여 주요작품의 제목 및 역할에 대해 등록해 주시기 바랍니다.
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;(역할은 메인작가, 공통작가, 보조작가, 각색, 각본 등 
+					본인 역할을 정확히 기재해 주시기 바랍니다.)
+				</p>
+			</td>
 		</tr>
 		<tr>
 			<td>작가정보공개설정</td>
+			<td>
+				<input type="radio" name="public">공개
+				<input type="radio" name="private">비공개
+			</td>
 		</tr>
 	</table>
 	<br><br>
@@ -174,24 +222,46 @@
 	<table>
 		<tr>
 			<td>∨ 소속(회사)</td>
+			<td>
+				<input type="text" name="party">
+			</td>
 		</tr>
 		<tr>
 			<td>사업자등록번호</td>
+			<td>
+				<input type="text" name="crn1">
+				-
+				<input type="text" name="crn2">
+				-
+				<input type="text" name="crn3">
+			</td>
 		</tr>
 		<tr>
 			<td>∨ 사업자등록증(첨부)</td>
+			<td>
+				
+			</td>
 		</tr>
 	</table>
 	<hr>
 	<table>
 		<tr>
 			<td>∨ 분야</td>
+			<td>
+				
+			</td>
 		</tr>
 		<tr>
 			<td>∨ 직종</td>
+			<td>
+				
+			</td>
 		</tr>
 		<tr>
 			<td>주요 경력</td>
+			<td>
+				
+			</td>
 		</tr>
 	</table>
 
