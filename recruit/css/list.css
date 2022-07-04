@@ -12,17 +12,19 @@
 .list table {
 	margin-left: auto;
 	margin-right: auto;
-	width: 60%;
-	background-color: #ECFFEE;
+	width: 80%;
+	background-color: white;
 }
 
-.list th{
+.list th { 
 	color: white;
-	background-color: #2A3B2C;
+	background-color: black;
+	height: 50px;
 }
 
-.list td{
-	height: 30px;	
+.list td {
+	border-collapse: collapse;
+ 	height: 30px;	
 }
 
 .list div {
