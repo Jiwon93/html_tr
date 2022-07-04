@@ -1,0 +1,58 @@
+.list {
+	text-align: center;
+}
+
+.list > input {
+	padding: 0 20px 0;
+	width: 600px;
+	height: 40px;
+	text-indent: 15px;
+}
+
+.list table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+	background-color: #ECFFEE;
+}
+
+.list th{
+	color: white;
+	background-color: #2A3B2C;
+}
+
+.list td{
+	height: 30px;	
+}
+
+.list div {
+	padding: 0 0 45px;
+}
+
+.list div ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+.list div ul li {
+	position: relative;
+	padding: 0 18px;
+}
+
+.list div ul li ~ li:after {
+	content: "";
+	position: absolute;
+}
+
+.list ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	
+}
+
+.list ul li {
+	position: relative;
+	padding: 0 18px;
+}

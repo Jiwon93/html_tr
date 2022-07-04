@@ -1,0 +1,12 @@
+.view table {
+	width: 80%;
+}
+
+.view th, td {
+	border: 1px solid;
+	
+}
+
+.view ul li {
+	list-style: none;
+}

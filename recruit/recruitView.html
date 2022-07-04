@@ -3,10 +3,197 @@
 <head>
 	<meta charset="uTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>신지원</title>
+	<link rel="stylesheet" href="./css/view.css">
+	<title>상세페이지</title>
+	<style type="text/css">
+	
+		body {
+			background-color: #F4F4F4;
+		}
+	
+	</style>
+	
 </head>
-
 <body>
-
+	<form class="view" action="" id="">
+		<div style="text-align:center"><h1>[입사지원서]</h1></div>
+		<table>
+			<tr>
+				<th>지원분야</th>
+				<td></td>
+				<th>경력구분</th>
+				<td>신입</td>
+				<th>희망연봉</th>
+				<td>회사 내규에 따름</td>
+			</tr>
+		</table>
+		<br>
+		<br>	
+		<h4>□기본정보</h4>	
+		<table>
+			<tr>
+				<td style="color:red" rowspan="6" width="150px"><i>정장차림의 증명사진 넣으시면 됩니다.단축키 ctrl+N+I</i></td>
+				<td>성 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</td>
+				<td></td>
+				<td>한 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
+				<td></td>
+			</tr>	
+			<tr>
+				<!-- <td></td> -->
+				<td>영 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</td>
+				<td></td>
+				<td>생년월일</td>
+				<td></td>
+			</tr>	
+			<tr>
+				<!-- <td></td> -->
+				<td>전화번호</td>
+				<td></td>
+				<td>비상연락망</td>
+				<td></td>
+			</tr>	
+			<tr>
+				<!-- <td></td> -->
+				<td>전자우편</td>
+				<td></td>
+				<td>나 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이</td>
+				<td></td>
+			</tr>	
+			<tr>
+				<!-- <td></td> -->
+				<td>주 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</td>
+				<td colspan="3"></td>
+				<!-- 
+				<td></td>
+				<td></td>
+				<td></td>
+				 -->
+			</tr>	
+			<tr>
+				<!-- <td></td> -->
+				<td>취미생활</td>
+				<td colspan="3"><div style="text-align:left">선택사항</div></td>
+				<!-- 
+				<td></td>
+				<td></td>
+				<td></td>
+				 -->
+			</tr>	
+		</table>
+		<br>
+		<br>
+		<h4>□학력사항 (최신이력이 가장 위로)</h4>
+		<table>
+			<tr>
+				<td>기간</td>
+				<td>출신학교</td>
+				<td>구분</td>
+				<td>[학과]</td>
+				<td>소재지</td>
+			</tr>
+			<tr>
+				<td>2017.03 ~ 2021.02</td>
+				<td>oo대학교</td>
+				<td>졸업</td>
+				<td>oo과</td>
+				<td>서울</td>
+			</tr>
+			<tr>
+				<td>2014.03 ~ 2017.02</td>
+				<td>oo고등학교</td>
+				<td>졸업</td>
+				<td>-</td>
+				<td>서울</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<h4>□[교육연수]</h4>
+		<table>
+			<tr>
+				<td>연수기간</td>
+				<td>연수기관</td>
+				<td>연수과정 및 내용</td>
+			</tr>
+			<tr>
+				<td>2021.12.30~2022.6.22</td>
+				<td>(주)이젠 아카데미
+				<br>(서울 강남역 본원) 
+				<br>국가기간전략산업직종 훈련</td>
+				<td>
+					
+				</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<h4>□[자격사항]</h4>
+		<table>
+			<tr>
+				<td>취득일</td>
+				<td>종류 및 등급</td>
+				<td>발행처</td>
+				<td>보유기술 및 수준</td>
+			</tr>
+			<tr>
+				<td>2021.08</td>
+				<td>워드프로세서 1급</td>
+				<td>대한상공회의소</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>2021.06</td>
+				<td>정보처리기사</td>
+				<td>한국산업인력공단</td>
+				<td></td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<h4>□경력사항(4대 보험 가입 경력)</h4>
+		<table>
+			<tr>
+				<td>활동기간</td>
+				<td>기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;관</td>
+				<td>담당업무</td>
+				<td>경험 및 습득역량</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		
+		<ul>
+			<li><a href="recruitList.html" id="backV">뒤로가기</a></li>
+			<li><a href="recruitModForm.html" id="modV">수정</a></li>
+			<li><a href="" id="delV" onclick="delV();">삭제</a></li>
+		</ul>
+	</form>
+	<script type="text/javascript">
+		/* validation */
+		function delV() {
+			alert("정말 삭제하시겠습니까?");
+			document.getElementById("delV").submit();
+		}
+		function back() {
+			alert();
+			document.getElementById("").submit();
+		}
+	</script>
 </body>
 </html>
