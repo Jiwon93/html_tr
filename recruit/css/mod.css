@@ -8,21 +8,30 @@
 	font: bold;
 }
 
-.mod th, td {
-	border: 1px solid;
-}
-
 .mod th {
 	background-color: black;
 	color: white;
 	height: 40px;
+	width: 150px
 }
 
 .mod td {
 	background-color: white;
 	text-align: center;
-	width: 300px;
 	height: 40px;
+}
+
+.mod input {
+	width: 200px;
+	height: 30px;
+	text-align: center;
+	font-size: 15px;
+}
+
+.mod select {
+	height: 36px;
+	font-size: 15px;
+	
 }
 
 .mod ul {
@@ -45,4 +54,8 @@
 
 .mod button:hover {
 	color: #86BC25;
+}
+
+.bbb {
+	width: 600px;
 }

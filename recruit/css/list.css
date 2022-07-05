@@ -21,7 +21,7 @@
 	height: 50px;
 }
 
-.list tr td a {
+.list td a {
 	text-decoration: none;	
 }
 
@@ -90,5 +90,13 @@
 }
 
 .list button:hover {
+	color: #86BC25;
+}
+
+.aaa:hover {
+	color: red;
+}
+
+.aaa:active {
 	color: #86BC25;
 }

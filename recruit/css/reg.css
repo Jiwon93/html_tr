@@ -28,6 +28,16 @@
 	padding: 0 18px;
 }
 
+.reg input {
+	height: 30px;
+	font-size: 15px;
+}
+
+.reg select {
+	height: 30px;
+	font-size: 15px;
+}
+
 .reg button {
 	width: 100%;
 	background: #2B2B2B;

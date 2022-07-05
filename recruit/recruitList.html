@@ -16,7 +16,7 @@
 </head>
 	
 <body>
-	<form class="list" method="post" action="" id="">
+	<form class="list" method="post" action="recruitView.html" id="">
 		<h1>✉받은메일함</h1>
 		<!-- 검색창 -->
 		<input type="text" name="" placeholder="검색어를 입력해주세요"> 
@@ -24,7 +24,9 @@
 		<!-- 지원자 목록 -->
 		<table>
 			<tr>
-				<th>확인</th>
+				<th>
+					<input type="checkbox" name="selectall" value="selectall" onclick="selectAll(this)">선택
+				</th>
 				<th>번호</th>
 				<th>이름</th>
 				<th>지원분야</th>
@@ -36,21 +38,25 @@
 				<th>전자우편</th>
 				<th>희망연봉</th>
 			</tr>
-			<tr>
-					<td><input type="checkbox" name=""></td>
-					<td>1</td>
-					<td><a href="recruitView.html" target="_blank">한지민</a></td>
-					<td>디자인</td>
-					<td>경력</td>
-					<td>female</td>
-					<td>27</td>
-					<td>경기도 수원시</td>
-					<td>010-0101-0101</td>
-					<td>min@naver.com</td>
-					<td>4000</td>
+			<tr class="aaa" onclick="location.href='recruitView.html'" style="cursor: pointer;">
+				<td onclick="event.cancelBubble=true">
+					<input type="checkbox" name="cholist" onclick="checkselectAll(this)">
+				</td>
+				<td>1</td>
+				<td>한지민</td>
+				<td>디자인</td>
+				<td>경력</td>
+				<td>female</td>
+				<td>27</td>
+				<td>경기도 수원시</td>
+				<td>010-0101-0101</td>
+				<td>min@naver.com</td>
+				<td>4000</td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" name=""></td>
+				<td>
+					<input type="checkbox" name="cholist" onclick="checkselectAll(this)">
+				</td>
 				<td>2</td>
 				<td><a href="">이세돌</a></td>
 				<td>개발</td>
@@ -63,7 +69,9 @@
 				<td>4500</td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" name=""></td>
+				<td>
+					<input type="checkbox" name="cholist" onclick="checkselectAll(this)">
+				</td>
 				<td>3</td>
 				<td><a href="">현빈</a></td>
 				<td>영업</td>
@@ -76,7 +84,9 @@
 				<td>2500</td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" name=""></td>
+				<td>
+					<input type="checkbox" name="cholist" onclick="checkselectAll(this)">
+				</td>
 				<td>4</td>
 				<td><a href="">손예진</a></td>
 				<td>사무</td>
@@ -89,7 +99,9 @@
 				<td>2400</td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" name=""></td>
+				<td>
+					<input type="checkbox" name="cholist" onclick="checkselectAll(this)">
+				</td>
 				<td>5</td>
 				<td><a href="">이효리</a></td>
 				<td>비서</td>
@@ -102,7 +114,9 @@
 				<td>3000</td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" name=""></td>
+				<td>
+					<input type="checkbox" name="cholist" onclick="checkselectAll(this)">
+				</td>
 				<td>6</td>
 				<td><a href="">유재석</a></td>
 				<td>인사</td>
@@ -115,7 +129,9 @@
 				<td>3500</td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" name=""></td>
+				<td>
+					<input type="checkbox" name="cholist" onclick="checkselectAll(this)">
+				</td>
 				<td>7</td>
 				<td><a href="">강호동</a></td>
 				<td>총무</td>
@@ -128,7 +144,9 @@
 				<td>회사내규따름</td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" name=""></td>
+				<td>
+					<input type="checkbox" name="cholist" onclick="checkselectAll(this)">
+				</td>
 				<td>8</td>
 				<td><a href="">헬렌켈러</a></td>
 				<td>영업</td>
@@ -141,7 +159,9 @@
 				<td>2400</td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" name=""></td>
+				<td>
+					<input type="checkbox" name="cholist" onclick="checkselectAll(this)">
+				</td>
 				<td>9</td>
 				<td><a href="">이순신</a></td>
 				<td>총무</td>
@@ -154,7 +174,9 @@
 				<td>회사내규따름</td>
 			</tr>
 			<tr>
-				<td><input type="checkbox" name=""></td>
+				<td>
+					<input type="checkbox" name="cholist" onclick="checkselectAll(this)">
+				</td>
 				<td>10</td>
 				<td><a href="">홍길동</a></td>
 				<td>인사</td>
@@ -170,13 +192,13 @@
 		<!-- 페이지 순서 -->
 		<div>
 			<ul>
-				<li><a href="">ㅇ</a></li>
+				<li><a href="">< Prev</a></li>
 				<li><a href="">1</a></li>
 				<li><a href="">2</a></li>
 				<li><a href="">3</a></li>
 				<li><a href="">4</a></li>
 				<li><a href="">5</a></li>
-				<li><a href="">ㅇ</a></li>
+				<li><a href="">Next ></a></li>
 			</ul>
 		</div>
 		<!-- 메뉴버튼들 -->
@@ -195,8 +217,28 @@
 		}
 		function downList() {
 			alert("다운로드하시겠습니까?");
+			location.href='./image/min.jpg'
 			document.getElementById("downL").submit();
 		}
+		
+		function checkSelectAll(checkbox) {
+			const selectall
+				= document.querySelector('input[name="selectall"]');
+			
+			if(checkbox.checked === false) {
+				selectall.checked = false;
+			}
+		}
+		
+		function selectAll(selectAll) {
+			const checkboxes
+				= document.getElementsByName('cholist');
+			
+			checkboxes.forEach((checkbox) => {
+				checkbox.checked = selectAll.checked
+			})
+		}
+		
 	</script>
 </body>
 </html>
