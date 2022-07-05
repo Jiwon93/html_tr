@@ -4,15 +4,23 @@
 	width: 80%;
 }
 
+.view table > caption > span {
+	font: bold;
+}
+
 .view th, td {
 	border: 1px solid;
 }
 
 .view th {
+	background-color: black;
+	color: white;
 	height: 40px;
 }
 
 .view td {
+	background-color: white;
+	text-align: center;
 	width: 300px;
 	height: 40px;
 }

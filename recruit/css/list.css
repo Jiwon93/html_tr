@@ -13,18 +13,21 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
-	background-color: white;
 }
 
-.list th { 
+.list th{
 	color: white;
 	background-color: black;
 	height: 50px;
 }
 
-.list td {
-	border-collapse: collapse;
- 	height: 30px;	
+.list tr td a {
+	text-decoration: none;	
+}
+
+.list td{
+	background-color: white;
+	height: 40px;	
 }
 
 .list div {
@@ -57,4 +60,25 @@
 .list ul li {
 	position: relative;
 	padding: 0 18px;
+}
+
+.list ul li a {
+	text-decoration: none;
+}
+
+.list a:link {
+	color: black;
+}
+
+.list a:visited {
+	color: black;
+}
+
+.list a:hover {
+	color: red;
+	text-decoration: underline;
+}
+
+.list a:active {
+	color: #86BC25;
 }
