@@ -54,7 +54,6 @@
 	display: flex;
 	justify-content: center;
 	list-style: none;
-	
 }
 
 .list ul li {
@@ -80,5 +79,16 @@
 }
 
 .list a:active {
+	color: #86BC25;
+}
+
+.list button {
+	width: 100%;
+	background: #2B2B2B;
+	font-size: 20px;
+	color: white;
+}
+
+.list button:hover {
 	color: #86BC25;
 }

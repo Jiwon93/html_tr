@@ -25,6 +25,24 @@
 	height: 40px;
 }
 
-.view ul li {
+.view ul {
+	display: flex;
+	justify-content: center;
 	list-style: none;
+}
+
+.view ul li {
+	position: relative;
+	padding: 0 18px;
+}
+
+.view button {
+	width: 100%;
+	background: #2B2B2B;
+	font-size: 20px;
+	color: white;
+}
+
+.view button:hover {
+	color: #86BC25;
 }

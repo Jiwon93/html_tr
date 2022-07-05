@@ -67,7 +67,7 @@
 			<tr>
 				<th>✔ 이메일</th>
 				<td>
-					<input type="text" name="Emailhead" id="Emailhead">@<input type="text" name="Emailtag" id="Emailtag" >
+					<input type="text" name="Emailhead" id="Emailhead">@<input type="text" name="Emailtag" id="Emailtag">
 					<select name="emailaddress">
 						<option value="">메일주소선택
 						<option value="구글">google.com
@@ -200,15 +200,16 @@
 					<span style="color:#6B593E;">
 						💬(활동기간, 기관명, 담당업무, 경험 및 습득역량를 입력해 주시기 바랍니다)
 					</span>
-					<br>
-					<input type="text" name="from" id="from" style="width:150px"> 📅 ~
-					<input type="text" name="to" id="to" style="width:150px"> 📅
-					<input type="text" name="" id="" placeholder="기관명">
-					<input type="text" name="" id="" placeholder="담당업무">
-					<input type="text" name="" id="" placeholder="경험 및 습득역량">
-					<input type="button" name="b-delete" id="b-delete" value="🗑삭제" onclick="">
-					<br>
-					<input type="button" name="b-plus" id="b-plus" value="+추가" onclick="">
+					<div id="box">					
+						<input type="text" name="from" id="from" style="width:150px"> 📅 ~
+						<input type="text" name="to" id="to" style="width:150px"> 📅
+						<input type="text" name="" id="" placeholder="기관명">
+						<input type="text" name="" id="" placeholder="담당업무">
+						<input type="text" name="" id="" placeholder="경험 및 습득역량">
+						<input type="button" name="b-delete" id="b-delete" value="🗑삭제" onclick="remove(this)">
+						<br>
+						<input type="button" id="" value="+추가" onclick="add_box()">
+					</div>
 				</td>
 			</tr>
 			<tr>
@@ -239,18 +240,19 @@
 			</tr>
 		</table>
 		<ul>
-			<li><a href="recruitList.html" id="backR">뒤로가기</a></li>
-			<li><a href="recruitList.html" id="comR" onclick="comR();">등록</a></li>
+			<li><button type="button" id="backR" onclick="location.href='recruitList.html'">뒤로가기</button></li>
+			<li><button type="button" id="comR" onclick="comReg();">등록</button></li>
 		</ul>
 	</form>
 	
 	<script type="text/javascript">
 		/* validation */
-		function comR() {
+		function comReg() {
 			alert("지원 완료되었습니다.");
+			location.href='recruitList.html';
 			document.getElementById("comR").submit();
 		}
-		function back() {
+		function emails() {
 			alert("");
 			document.getElementById("").submit();
 		}

@@ -16,7 +16,7 @@
 </head>
 	
 <body>
-	<form class="list" action="" id="">
+	<form class="list" method="post" action="" id="">
 		<h1>✉받은메일함</h1>
 		<!-- 검색창 -->
 		<input type="text" name="" placeholder="검색어를 입력해주세요"> 
@@ -181,19 +181,20 @@
 		</div>
 		<!-- 메뉴버튼들 -->
 		<ul>
-			<li><a href="" id="delL" onclick="delL();">삭제</a></li>
-			<li><a href="./image/min.jpg" download="한지민_입사지원서" id="downL" onclick="downL();">파일다운</a></li>
-			<li><a href="recruitRegForm.html">등록</a></li>		
+			<li><button type="button" id="delL" onclick="delList();">삭제</button></li>
+			<li><button type="button" id="downL" onclick="downList();">파일다운</button></li>
+			<li><button type="button" id="" onclick="location.href='recruitRegForm.html'">등록</button></li>		
 		</ul>
 	</form>
 	<script type="text/javascript">
 		/* validation */
-		function delL() {
+		function delList() {
 			alert("진짜 삭제하시겠습니까?");
+			location.href='recruitList.html';
 			document.getElementById("delL").submit();
 		}
-		function downL() {
-			alert("다운하시겠습니까?");
+		function downList() {
+			alert("다운로드하시겠습니까?");
 			document.getElementById("downL").submit();
 		}
 	</script>
