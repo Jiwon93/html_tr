@@ -16,15 +16,14 @@
 </head>
 
 <body>
-	<form class="mod" method="post" action="" id="">
+	<form class="mod" name="modform" method="post" action="" id="">
 		<div style="text-align:center"><h1>[수정]</h1></div>
 		<table>
-			<table>
 			<tr>
 				<th>지원분야</th>
 				<td>
-					<input type="text" name="" id="" placeholder="디자인">
-					<select name="">
+					<input type="text" name="select" id="select" placeholder="디자인">
+					<select name="select1" id="select1" onchange="partsele();">
 						<option value="">선택</option>
 						<option value="인사">인사</option>
 						<option value="총무">총무</option>
@@ -37,8 +36,8 @@
 				</td>
 				<th>경력구분</th>
 				<td>
-					<input type="text" name="" id="" placeholder="경력">
-					<select name="">
+					<input type="text" name="career" id="career" placeholder="경력">
+					<select name="career1" id="career1" onchange="careersel();">
 						<option value="">선택</option>
 						<option value="신입">신입</option>
 						<option value="경력">경력</option>
@@ -77,8 +76,8 @@
 				<th>생년월일 / 성별</th>
 				<td>
 					<input type="text" name="" id="" placeholder="960316">
-					<input type="text" name="" id="" placeholder="female">
-					<select name="">
+					<input type="text" name="gen" id="gen" placeholder="female">
+					<select name="gender" id="gender" onchange="genders();">
 						<option value="">선택</option>
 						<option value="male">male</option>
 						<option value="female">female</option>
@@ -124,8 +123,8 @@
 				<th>전자우편</th>
 				<td colspan="4">
 					<input type="text" name="" id="" placeholder="min">
-					<input type="text" name="" id="" placeholder="@naver.com">
-					<select name="emailaddress">
+					<input type="text" name="modmail" id="modmail" placeholder="@naver.com">
+					<select name="modmail1" id="modmail1" onchange="modmails();">
 						<option value="">메일주소선택
 						<option value="구글">@google.com
 						<option value="네이버">@naver.com
@@ -167,8 +166,8 @@
 					<input type="text" name="" id="" placeholder="수원대학교">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="졸업">
-					<select name="">
+					<input type="text" name="gradu" id="gradu" placeholder="졸업">
+					<select name="gradu1" id="gradu1" onchange="gradus();">
 						<option value="">선택</option>
 						<option value="중퇴">중퇴</option>
 						<option value="재학중">재학중</option>
@@ -192,8 +191,8 @@
 					<input type="text" name="" id="" placeholder="수원고등학교">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="졸업">
-					<select name="">
+					<input type="text" name="gradu2" id="gradu2" placeholder="졸업">
+					<select name="gradu3" id="gradu3" onchange="gradua();">
 						<option value="">선택</option>
 						<option value="중퇴">중퇴</option>
 						<option value="재학중">재학중</option>
@@ -353,6 +352,25 @@
 			alert("수정하시겠습니까?");
 			location.href='recruitView.html'
 			document.getElementById("comM").submit();
+		}
+		
+		function partsele() {
+			document.modform.select.value = document.modform.select1.value;
+		}
+		function careersel() {
+			document.modform.career.value = document.modform.career1.value;
+		}
+		function genders() {
+			document.modform.gen.value = document.modform.gender.value;
+		}
+		function modmails() {
+			document.modform.modmail.value = document.modform.modmail1.value;
+		}
+		function gradus() {
+			document.modform.gradu.value = document.modform.gradu1.value;
+		}
+		function gradua() {
+			document.modform.gradu2.value = document.modform.gradu3.value;
 		}
 	</script>
 </body>

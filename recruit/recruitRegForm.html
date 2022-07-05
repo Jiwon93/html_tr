@@ -19,8 +19,7 @@
 </head>
 
 <body>
-	
-	<form class="reg" method="post" action="" id="">
+	<form class="reg" method="post" name="regist" action="" id="">
 		<h1>[입사지원]</h1>
 		<table> 
 			<caption style="text-align:left; font-weight:bold;">
@@ -67,22 +66,22 @@
 			<tr>
 				<th>✔ 이메일</th>
 				<td>
-					<input type="text" name="Emailhead" id="Emailhead">@<input type="text" name="Emailtag" id="Emailtag">
-					<select name="emailaddress">
+					<input type="text" name="emailhead" id="emailhead">@<input type="text" name="emailtag" id="emailtag">
+					<select name="selectm" id="selectm" onchange="mailsel();">
 						<option value="">메일주소선택
-						<option value="구글">google.com
-						<option value="네이버">naver.com
-						<option value="한메일">hanmail.net
-						<option value="다음">daum.net
-						<option value="핫메일">hotmail.com
-						<option value="네이트">nate.com
-						<option value="야후">yahoo.co.kr
-						<option value="직접입력">직접입력
+						<option value="google.com">google.com
+						<option value="naver.com">naver.com
+						<option value="hanmail.net">hanmail.net
+						<option value="daum.net">daum.net
+						<option value="hotmail.com">hotmail.com
+						<option value="nate.com">nate.com
+						<option value="yahoo.co.kr">yahoo.co.kr
+						<option value="">직접입력
 					</select>
-					<button type="button" name="emailcheck" id="emailcheck" style="font-size: 11px; width:100px; height:30px;" onclick="">✔ 인증코드 발송</button>
+					<button type="button" name="emailcheck" id="emails" style="font-size: 11px; width:100px; height:30px;" onclick="emailsend();">✔ 인증코드 발송</button>
 					<br>
 					<input type="text" name="codewrite" id="codewrite" placeholder="인증번호입력">
-					<button type="button" name="codecheck" id="codecheck" style="font-size: 15px; width:100px; height:30px;" onclick="">✔ 인증확인</button>
+					<button type="button" name="codecheck" id="codecheck" style="font-size: 15px; width:100px; height:30px;" onclick="emailchk();">✔ 인증확인</button>
 				</td>
 			</tr>
 			<tr>
@@ -251,11 +250,18 @@
 			location.href='recruitList.html';
 			document.getElementById("comR").submit();
 		}
-		function emails() {
-			alert("");
-			document.getElementById("").submit();
+		function emailsend() {
+			alert("인증번호가 전송되었습니다.");
+			document.getElementById("emails").submit();
+		}
+		function emailchk() {
+			alert("인증이 완료되었습니다.");
+			document.getElementById("codecheck").submit();
 		}
 		
+		function mailsel() {
+			document.regist.emailtag.value = document.regist.selectm.value;
+		}
 	</script>
 	
 </body>
