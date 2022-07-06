@@ -1,0 +1,108 @@
+#top {
+	text-align: center;
+}
+
+#search {
+	float: right;
+	width: 200px;
+	height: 30px;
+}
+
+#click {
+	float: right;
+	width: 45px;
+	height: 36px;
+}
+
+#menu {
+	height: 100px;
+	background-color: black;
+	color: white;
+	font-size: 30px;
+	text-indent: 20px;
+}
+
+#mypage {
+	clear: both;
+	float: left;
+	background-color: #2B2B2B;
+	color: white;
+	padding: 30px;
+}
+
+#mypage a:link {
+	color: white;
+}
+
+#mypage a:visited {
+	color: white;
+}
+
+#mypage a:hover {
+	color: #86BC25;
+	text-decoration: underline;
+}
+
+#mypage a:active {
+	color: red;
+}
+
+.list2 ul li {
+	list-style: none;
+}
+
+.list2 ul li ul li {
+	list-style: square;
+}
+
+#body {
+	float: left;
+	text-align: center;
+	text-indent: 10px;
+}
+
+#ffff {
+	float: right;	
+	padding: 0 0 0px;
+}
+
+#gggg ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+}
+
+#gggg ul li {
+	position: relative;
+}
+
+#gggg div ul li ~ li:after {
+	content: "";
+	position: absolute;
+}
+
+#gggg li a:link {
+	color: black;
+}
+
+#gggg li a:visited {
+	color: black;
+}
+
+#gggg li a:hover {
+	color: blue;
+}
+
+#gggg li a:active {
+	color: red;
+}
+
+#root {
+	width: 100%;
+	height: 100px;
+	clear: both;
+	text-align: center;
+	background-color: black;
+	color: white;
+	
+}
