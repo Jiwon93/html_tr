@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="uTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/reg.css">
+	<title>수정</title>
+	
+	<style type="text/css">
+	
+		body {
+			background-color: #F4F4F4;
+		}
+	
+	</style>
+	
+</head>
+<body>
+	<form class="reg" name="regform" method="post" action="" id="">
+		<div style="text-align:center"><h1>[입사지원서]</h1></div>
+		<table>
+			<tr>
+				<th>지원분야</th>
+				<td>
+					<input type="text" name="select" id="select">
+					<select name="select1" id="select1" onchange="partsele();">
+						<option value="">선택</option>
+						<option value="인사">인사</option>
+						<option value="총무">총무</option>
+						<option value="개발">개발</option>
+						<option value="디자인">디자인</option>
+						<option value="영업">영업</option>
+						<option value="사무">사무</option>
+						<option value="비서">비서</option>
+					</select>
+				</td>
+				<th>경력구분</th>
+				<td>
+					<input type="text" name="career" id="career">
+					<select name="career1" id="career1" onchange="careersel();">
+						<option value="">선택</option>
+						<option value="신입">신입</option>
+						<option value="경력">경력</option>
+					</select>	
+				</td>
+				<th>희망연봉</th>
+				<td>
+					<input type="text" name="" id="" >
+				</td>
+			</tr>
+		</table>
+		<br>
+		<br>	
+		
+		<table>
+			<caption style="text-align: left;">
+				<span>□기본정보</span>
+			</caption>
+			<tr>
+				<td rowspan="4" width="150px"><input type="file"></td>
+				<th>성 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</th>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<th>한 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</th>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+			</tr>	
+			<tr>
+				<!-- <td></td> -->
+				<th>영 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</th>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<th>생년월일 / 성별</th>
+				<td>
+					<input type="text" name="" id="">
+					<input type="text" name="gen" id="gen">
+					<select name="gender" id="gender" onchange="genders();">
+						<option value="">선택</option>
+						<option value="male">male</option>
+						<option value="female">female</option>
+					</select>
+				</td>
+			</tr>	
+			<tr>
+				<!-- <td></td> -->
+				<th>전화번호</th>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<th>비상연락망</th>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+			</tr>	
+			<tr>
+				<!-- <td></td> -->
+				<th>취미 / 특기</th>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<th>나 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이</th>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+			</tr>	
+			<tr>
+				<th>주 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</th>
+				<td colspan="4">
+					<input class="bbb"  type="text" style="width: 900px" name="" id="">
+					<br>
+					<input class="bbb"  type="text" style="width: 900px" name="" id="">
+				</td>
+				<!-- 
+				<td></td>
+				<td></td>
+				<td></td>
+				 -->
+			</tr>
+			<tr>	
+				<th>전자우편</th>
+				<td colspan="4">
+					<input type="text" name="" id="">
+					<input type="text" name="modmail" id="modmail">
+					<select name="modmail1" id="modmail1" onchange="modmails();">
+						<option value="">메일주소선택
+						<option value="구글">@google.com
+						<option value="네이버">@naver.com
+						<option value="한메일">@hanmail.net
+						<option value="다음">@daum.net
+						<option value="핫메일">@hotmail.com
+						<option value="네이트">@nate.com
+						<option value="야후">@yahoo.co.kr
+						<option value="직접입력">직접입력
+					</select>
+				</td>
+				<!-- 
+				<td></td>
+				<td></td>
+				<td></td>
+				 -->
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table>
+			<caption style="text-align: left;">
+				<span>□학력사항 (최신이력이 가장 위로)</span>
+			</caption>
+			<tr>
+				<th>기간</th>
+				<th>출신학교</th>
+				<th>구분</th>
+				<th>[학과]</th>
+				<th>소재지</th>
+			</tr>
+			<tr>
+				<td>
+					<input type="month" name="" id="">
+					~
+					<input type="month" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="gradu" id="gradu">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="month" name="" id="">
+					~
+					<input type="month" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="gradu2" id="gradu2">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table>
+			<caption style="text-align: left;">
+				<span>□[교육연수]</span>
+			</caption>
+			<tr>
+				<th>연수기간</th>
+				<th>연수기관</th>
+				<th>연수과정 및 내용</th>
+			</tr>
+			<tr>
+				<td>
+					<input type="month" name="" id="">
+					~
+					<input type="month" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<textarea style="width: 90%; height: 50px;" name="award" id="award"></textarea>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<table>
+			<caption style="text-align: left;">
+				<span>□[자격사항]</span>
+			</caption>
+			<tr>
+				<th>취득일</td>
+				<th>종류 및 등급</td>
+				<th>발행처</td>
+				<th>보유기술 및 수준</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="month" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="month" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+			</tr>
+		</table>
+		<br><br>
+		<table>
+			<caption style="text-align: left;">
+				<span>□경력사항(4대 보험 가입 경력)</span>
+			</caption>
+			<tr>
+				<th>활동기간</td>
+				<th>기 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;관</td>
+				<th>담당업무</td>
+				<th>경험 및 습득역량</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="month" name="" id="">
+					~
+					<input type="month" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="month" name="" id="">
+					~
+					<input type="month" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="month" name="" id="">
+					~
+					<input type="month" name="" id="">				
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+				<td>
+					<input type="text" name="" id="">
+				</td>
+			</tr>
+		</table>
+		<ul>
+			<li><button type="button" id="backR" style="cursor: pointer;" onclick="location.href='recruitList.html'">뒤로가기</button></li>
+			<li><button type="button" id="comR" style="cursor: pointer;" onclick="comReg();">등록</button></li>
+			<li><button type="button" id="delR" style="cursor: pointer;" onclick="delReg();">삭제</button></li>
+		</ul>
+	</form>
+	
+	<script type="text/javascript">
+		/* validation */
+		function delReg() {
+			alert("정말 삭제하시겠습니까?");
+			location.href='recruitList.html'
+			document.getElementById("delR").submit();
+		}
+		function comReg() {
+			alert("지원이 완료되었습니다.");
+			location.href='recruitList.html'
+			document.getElementById("comR").submit();
+		}
+		
+		function partsele() {
+			document.modform.select.value = document.modform.select1.value;
+		}
+		function careersel() {
+			document.modform.career.value = document.modform.career1.value;
+		}
+		function genders() {
+			document.modform.gen.value = document.modform.gender.value;
+		}
+		function modmails() {
+			document.modform.modmail.value = document.modform.modmail1.value;
+		}
+	</script>
+</body>
+</html>

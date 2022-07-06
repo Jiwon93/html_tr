@@ -3,7 +3,6 @@
 <head>
 	<meta charset="uTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/reg.css">
 	<title>입사지원</title>
 	
 	<style type="text/css">
@@ -67,8 +66,8 @@
 			<tr>
 				<th>✔ 이메일</th>
 				<td>
-					<input type="text" name="emailhead" id="emailhead">@<input type="text" name="emailtag" id="emailtag">
-					<select name="selectm" id="selectm" onchange="mailsel();">
+					<input type="text" name="" id="">@<input type="text" name="" id="">
+					<select name="selectm" id="selectm" onchange="">
 						<option value="">메일주소선택
 						<option value="google.com">google.com
 						<option value="naver.com">naver.com
@@ -79,12 +78,12 @@
 						<option value="yahoo.co.kr">yahoo.co.kr
 						<option value="">직접입력
 					</select>
-					<button type="button" name="emailcheck" id="emails" style="font-size: 11px; cursor: pointer;" onclick="emailsend();">
+					<button type="button" name="emailcheck" id="emails" style="font-size: 11px; cursor: pointer;" onclick="">
 						✔ 인증코드 발송
 					</button>
 					<br>
 					<input type="text" name="codewrite" id="codewrite" placeholder="인증번호입력">
-					<button type="button" name="codecheck" id="codecheck" style="font-size: 15px; cursor: pointer;" onclick="emailchk();">
+					<button type="button" name="codecheck" id="codecheck" style="font-size: 15px; cursor: pointer;" onclick="">
 						✔ 인증확인
 					</button>
 				</td>
@@ -102,9 +101,9 @@
 						<option value="019">019
 					</select>
 					-
-					<input type="text" name="midcell" id="midcell">
+					<input type="text" name="" id="">
 					-
-					<input type="text" name="lastcell" id="lastcell">
+					<input type="text" name="" id="">
 					<br><br>
 					<span>비상연락망&nbsp;</span>
 					<select name="telephone">
@@ -126,7 +125,7 @@
 			<tr>
 				<th>✔ 우편번호</th>
 				<td>
-					<input type="text" id="postcode" placeholder="우편번호" readonly onclick="findAddr()">
+					<input type="text" id="postcode" placeholder="우편번호" readonly onclick="">
 					<button type="button" id=member_post style="font-size: 15px; cursor: pointer;" name="addr" onclick="">
 						🔍검색
 					</button>
@@ -257,65 +256,32 @@
 			</tr>
 		</table>
 		<ul>
-			<li><button type="button" id="backR" onclick="location.href='recruitList.html'">뒤로가기</button></li>
-			<li><button type="button" id="comR" onclick="comReg();">등록</button></li>
+			<li><button type="button" id="backR" onclick="">뒤로가기</button></li>
+			<li><button type="button" id="" onclick="">등록</button></li>
 		</ul>
 	</form>
 	
-	<script type="text/javascript">
+<!-- 	<script type="text/javascript">
 		/* 버튼작동 */
-		function comReg() {
+		function  {
 			alert("지원 완료되었습니다.");
 			location.href='recruitList.html';
 			document.getElementById("comR").submit();
 		}
-		function emailsend() {
+		function  {
 			alert("인증번호가 전송되었습니다.");
 			document.getElementById("emails").submit();
 		}
-		function emailchk() {
+		function  {
 			alert("인증이 완료되었습니다.");
 			document.getElementById("codecheck").submit();
 		}
 		
 		/* 메일자동완성 */
-		function mailsel() {
+		function  {
 			document.regist.emailtag.value = document.regist.selectm.value;
 		}
-		
-		/* 구현실패 */
-		var oTbl;
-		/* 추가기능 */
-		function insRow() {
-			oTbl = document.getElementById("");
-			var oRow =oTbl.insertRow();
-			oRow.onmouseover = function(){oTbl.clickedRowIndex};
-			var oCell = oRow.insertCell();
-		
-		
-			var frmTag = "<input type=text name=addText value=기관명>";
-			frmTag += "";
-			oCell.innerHTML = frmTag;
-		}
-		
-		/* 삭제기능 */
-		function removeRow() {
-			oTbl.deleteRow(oTbl.clickedRowIndex);
-		}
-		
-		function frmcheck() {
-			var frm = document.form;
-			
-			for(var i=0; i<=frm.elements.length-1; i++){
-				if(frm.elements[i].name == "addText"){
-					if(!frm.element[i].value){
-						alert("내용을 입력해주세요.");
-							frm.elements[i].focus();
-					return;
-					}//if end
-				}//if end
-			}//for end
-		}//function end
-	</script>
+	</script> 
+-->
 </body>
 </html>
