@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/reg.css">
 	<title>입사지원</title>
+	
 	<style type="text/css">
 	
 		body {
@@ -16,8 +17,8 @@
 		}
 	
 	</style>
+	
 </head>
-
 <body>
 	<form class="reg" method="post" name="regist" action="" id="">
 		<h1>[입사지원]</h1>
@@ -78,10 +79,14 @@
 						<option value="yahoo.co.kr">yahoo.co.kr
 						<option value="">직접입력
 					</select>
-					<button type="button" name="emailcheck" id="emails" style="font-size: 11px; width:100px; height:30px;" onclick="emailsend();">✔ 인증코드 발송</button>
+					<button type="button" name="emailcheck" id="emails" style="font-size: 11px; cursor: pointer;" onclick="emailsend();">
+						✔ 인증코드 발송
+					</button>
 					<br>
 					<input type="text" name="codewrite" id="codewrite" placeholder="인증번호입력">
-					<button type="button" name="codecheck" id="codecheck" style="font-size: 15px; width:100px; height:30px;" onclick="emailchk();">✔ 인증확인</button>
+					<button type="button" name="codecheck" id="codecheck" style="font-size: 15px; cursor: pointer;" onclick="emailchk();">
+						✔ 인증확인
+					</button>
 				</td>
 			</tr>
 			<tr>
@@ -122,7 +127,9 @@
 				<th>✔ 우편번호</th>
 				<td>
 					<input type="text" id="postcode" placeholder="우편번호" readonly onclick="findAddr()">
-					<button type="button" id=member_post style="font-size: 15px; width:100px; height:30px;" name="addr" onclick="">🔍검색</button>
+					<button type="button" id=member_post style="font-size: 15px; cursor: pointer;" name="addr" onclick="">
+						🔍검색
+					</button>
 				</td>
 			</tr>
 			<tr>
@@ -166,9 +173,13 @@
 						<input type="text" name="sch"  id="sch" placeholder="출신학교">
 						<input type="text" name="gra"  id="gra" placeholder="구분">
 						<input type="text" name="major"  id="major" placeholder="학과">
-						<input type="button" name="m-delete" id="m-delete" value="🗑삭제" onclick="">
+						<button type="button" name="deleB3" id="" style="cursor: pointer;" onclick="">
+							🗑삭제
+						</button>
 						<br>
-						<input type="button" name="m-plus" id="m-plus" value="+추가" onclick="addRow();">
+						<button type="button" name="addB3" id="" style="cursor: pointer;" value="" onclick="">
+							+추가
+						</button>
 					</td>
 			</tr>
 			<tr>
@@ -185,9 +196,13 @@
 					<input type="text" name="" id="" placeholder="자격증 종류">
 					<input type="text" name="" id="" placeholder="발행처">
 					<input type="text" name="" id="" placeholder="기술 수준(상, 중, 하)">
-					<input type="button" name="S-delete" id="S-delete" value="🗑삭제" onclick="">
+					<button type="button" name="deleB2" id="deleB2" style="cursor: pointer;" onclick="">
+						🗑삭제
+					</button>
 					<br>
-					<input type="button" name="S-plus" id="S-plus" value="+추가" onclick="">
+					<button type="button" name="addB2" id="addB2" style="cursor: pointer;" onclick="">
+						+추가
+					</button>
 					<br>
 				</td>
 			</tr>
@@ -202,12 +217,16 @@
 					<div id="box">					
 						<input type="date" name="from" id="from" style="width:150px"> ~
 						<input type="date" name="to" id="to" style="width:150px">
-						<input type="text" name="" id="" placeholder="기관명">
+						<input type="text" name="addText" placeholder="기관명">
 						<input type="text" name="" id="" placeholder="담당업무">
 						<input type="text" name="" id="" placeholder="경험 및 습득역량">
-						<input type="button" name="b-delete" id="b-delete" value="🗑삭제" onclick="remove(this)">
+						<button type="button" name="deleB1" id="" style="cursor: pointer;" onclick="">
+							🗑삭제
+						</button>
 						<br>
-						<input type="button" id="" value="+추가" onclick="add_box()">
+						<button type="button" name="addB1" style="cursor: pointer;" id="" onclick="">
+							+추가
+						</button>
 					</div>
 				</td>
 			</tr>
@@ -227,7 +246,6 @@
 				<th>✔ 자기소개서(첨부)</th>
 				<td>
 					<input type="file" name="" id="">
-					
 				</td>
 			</tr>
 			<tr>
@@ -243,8 +261,9 @@
 			<li><button type="button" id="comR" onclick="comReg();">등록</button></li>
 		</ul>
 	</form>
+	
 	<script type="text/javascript">
-		/* validation */
+		/* 버튼작동 */
 		function comReg() {
 			alert("지원 완료되었습니다.");
 			location.href='recruitList.html';
@@ -259,10 +278,44 @@
 			document.getElementById("codecheck").submit();
 		}
 		
+		/* 메일자동완성 */
 		function mailsel() {
 			document.regist.emailtag.value = document.regist.selectm.value;
 		}
+		
+		/* 구현실패 */
+		var oTbl;
+		/* 추가기능 */
+		function insRow() {
+			oTbl = document.getElementById("");
+			var oRow =oTbl.insertRow();
+			oRow.onmouseover = function(){oTbl.clickedRowIndex};
+			var oCell = oRow.insertCell();
+		
+		
+			var frmTag = "<input type=text name=addText value=기관명>";
+			frmTag += "";
+			oCell.innerHTML = frmTag;
+		}
+		
+		/* 삭제기능 */
+		function removeRow() {
+			oTbl.deleteRow(oTbl.clickedRowIndex);
+		}
+		
+		function frmcheck() {
+			var frm = document.form;
+			
+			for(var i=0; i<=frm.elements.length-1; i++){
+				if(frm.elements[i].name == "addText"){
+					if(!frm.element[i].value){
+						alert("내용을 입력해주세요.");
+							frm.elements[i].focus();
+					return;
+					}//if end
+				}//if end
+			}//for end
+		}//function end
 	</script>
-	
 </body>
 </html>

@@ -39,7 +39,8 @@
 }
 
 .reg button {
-	width: 100%;
+	width: 100px;
+	height: 33px;
 	background: #2B2B2B;
 	font-size: 20px;
 	color: white;

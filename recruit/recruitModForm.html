@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/mod.css">
 	<title>수정</title>
+	
 	<style type="text/css">
 	
 		body {
@@ -14,7 +15,6 @@
 	</style>
 	
 </head>
-
 <body>
 	<form class="mod" name="modform" method="post" action="" id="">
 		<div style="text-align:center"><h1>[수정]</h1></div>
@@ -22,7 +22,7 @@
 			<tr>
 				<th>지원분야</th>
 				<td>
-					<input type="text" name="select" id="select" placeholder="디자인">
+					<input type="text" name="select" id="select" value="디자인">
 					<select name="select1" id="select1" onchange="partsele();">
 						<option value="">선택</option>
 						<option value="인사">인사</option>
@@ -36,7 +36,7 @@
 				</td>
 				<th>경력구분</th>
 				<td>
-					<input type="text" name="career" id="career" placeholder="경력">
+					<input type="text" name="career" id="career" value="경력">
 					<select name="career1" id="career1" onchange="careersel();">
 						<option value="">선택</option>
 						<option value="신입">신입</option>
@@ -45,7 +45,7 @@
 				</td>
 				<th>희망연봉</th>
 				<td>
-					<input type="text" name="" id="" placeholder="4000">
+					<input type="text" name="" id="" value="4000">
 				</td>
 			</tr>
 		</table>
@@ -60,23 +60,23 @@
 				<td rowspan="4" width="150px"><img alt="한지민" src="./image/min.jpg" width="100%"></td>
 				<th>성 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</th>
 				<td>
-					<input type="text" name="" id="" placeholder="한지민">
+					<input type="text" name="" id="" value="한지민">
 				</td>
 				<th>한 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</th>
 				<td>
-					<input type="text" name="" id="" placeholder="閒智敏">
+					<input type="text" name="" id="" value="閒智敏">
 				</td>
 			</tr>	
 			<tr>
 				<!-- <td></td> -->
 				<th>영 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</th>
 				<td>
-					<input type="text" name="" id="" placeholder="Hanjimin">
+					<input type="text" name="" id="" value="Hanjimin">
 				</td>
 				<th>생년월일 / 성별</th>
 				<td>
-					<input type="text" name="" id="" placeholder="960316">
-					<input type="text" name="gen" id="gen" placeholder="female">
+					<input type="text" name="" id="" value="960316">
+					<input type="text" name="gen" id="gen" value="female">
 					<select name="gender" id="gender" onchange="genders();">
 						<option value="">선택</option>
 						<option value="male">male</option>
@@ -88,30 +88,30 @@
 				<!-- <td></td> -->
 				<th>전화번호</th>
 				<td>
-					<input type="text" name="" id="" placeholder="010-0101-0101">
+					<input type="text" name="" id="" value="010-0101-0101">
 				</td>
 				<th>비상연락망</th>
 				<td>
-					<input type="text" name="" id="" placeholder="010-1111-1111">
+					<input type="text" name="" id="" value="010-1111-1111">
 				</td>
 			</tr>	
 			<tr>
 				<!-- <td></td> -->
 				<th>취미 / 특기</th>
 				<td>
-					<input type="text" name="" id="" placeholder="풋살">
+					<input type="text" name="" id="" value="풋살">
 				</td>
 				<th>나 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이</th>
 				<td>
-					<input type="text" name="" id="" placeholder="27">
+					<input type="text" name="" id="" value="27">
 				</td>
 			</tr>	
 			<tr>
 				<th>주 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;소</th>
 				<td colspan="4">
-					<input class="bbb"  type="text" style="width: 900px" name="" id="" placeholder="경기도 수원시">
+					<input class="bbb"  type="text" style="width: 900px" name="" id="" value="경기도 수원시">
 					<br>
-					<input class="bbb"  type="text" style="width: 900px" name="" id="" placeholder="상세주소 입력란">
+					<input class="bbb"  type="text" style="width: 900px" name="" id="" value="상세주소 입력란">
 				</td>
 				<!-- 
 				<td></td>
@@ -122,8 +122,8 @@
 			<tr>	
 				<th>전자우편</th>
 				<td colspan="4">
-					<input type="text" name="" id="" placeholder="min">
-					<input type="text" name="modmail" id="modmail" placeholder="@naver.com">
+					<input type="text" name="" id="" value="min">
+					<input type="text" name="modmail" id="modmail" value="@naver.com">
 					<select name="modmail1" id="modmail1" onchange="modmails();">
 						<option value="">메일주소선택
 						<option value="구글">@google.com
@@ -158,52 +158,40 @@
 			</tr>
 			<tr>
 				<td>
-					<input type="date" name="" id="">
+					<input type="month" name="" id="" value="2017-03">
 					~
-					<input type="date" name="" id="">
+					<input type="month" name="" id="" value="2021.02">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="수원대학교">
+					<input type="text" name="" id="" value="수원대학교">
 				</td>
 				<td>
-					<input type="text" name="gradu" id="gradu" placeholder="졸업">
-					<select name="gradu1" id="gradu1" onchange="gradus();">
-						<option value="">선택</option>
-						<option value="중퇴">중퇴</option>
-						<option value="재학중">재학중</option>
-						<option value="졸업">졸업</option>
-					</select>
+					<input type="text" name="gradu" id="gradu" value="졸업">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="시각디자인">
+					<input type="text" name="" id="" value="시각디자인">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="수원">
+					<input type="text" name="" id="" value="수원">
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<input type="date" name="" id="">
+					<input type="month" name="" id="" value="2014-03">
 					~
-					<input type="date" name="" id="">
+					<input type="month" name="" id="" value="2017-02">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="수원고등학교">
+					<input type="text" name="" id="" value="수원고등학교">
 				</td>
 				<td>
-					<input type="text" name="gradu2" id="gradu2" placeholder="졸업">
-					<select name="gradu3" id="gradu3" onchange="gradua();">
-						<option value="">선택</option>
-						<option value="중퇴">중퇴</option>
-						<option value="재학중">재학중</option>
-						<option value="졸업">졸업</option>
-					</select>
+					<input type="text" name="gradu2" id="gradu2" value="졸업">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="-">
+					<input type="text" name="" id="" value="-">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="수원">
+					<input type="text" name="" id="" value="수원">
 				</td>
 			</tr>
 		</table>
@@ -220,15 +208,15 @@
 			</tr>
 			<tr>
 				<td>
-					<input type="text" name="" id="">
+					<input type="month" name="" id="" value="2021-12">
 					~
-					<input type="text" name="" id="">
+					<input type="month" name="" id="" value="2022-06">
 				</td>
 				<td>
-					<input type="text" name="" id="">
+					<input type="text" name="" id="" value="(주)이젠 아카데미">
 				</td>
 				<td>
-					<input type="text" name="" id="">
+					<textarea style="width: 90%; height: 50px;" name="award" id="award" value="Open API활용 자바 안드로이드 웹&앱 개발자"></textarea>
 				</td>
 			</tr>
 		</table>
@@ -246,13 +234,13 @@
 			</tr>
 			<tr>
 				<td>
-					<input type="text" name="" id="" placeholder="2021.08">
+					<input type="month" name="" id="" value="2021-08">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="워드프로세서 1급">
+					<input type="text" name="" id="" value="워드프로세서 1급">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="대한상공회의소">
+					<input type="text" name="" id="" value="대한상공회의소">
 				</td>
 				<td>
 					<input type="text" name="" id="">
@@ -260,21 +248,20 @@
 			</tr>
 			<tr>
 				<td>
-					<input type="text" name="" id="" placeholder="2021.06">
+					<input type="month" name="" id="" value="2021-06">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="정보처리기사">
+					<input type="text" name="" id="" value="정보처리기사">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="한국산업인력공단">
+					<input type="text" name="" id="" value="한국산업인력공단">
 				</td>
 				<td>
 					<input type="text" name="" id="">
 				</td>
 			</tr>
 		</table>
-		<br>
-		<br>
+		<br><br>
 		<table>
 			<caption style="text-align: left;">
 				<span>□경력사항(4대 보험 가입 경력)</span>
@@ -287,15 +274,15 @@
 			</tr>
 			<tr>
 				<td>
-					<input type="text" name="" id="">
+					<input type="month" name="" id="" value="2021-01">
 					~
-					<input type="text" name="" id="">
+					<input type="month" name="" id="" value="2022-07">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="google">
+					<input type="text" name="" id="" value="google">
 				</td>
 				<td>
-					<input type="text" name="" id="" placeholder="디자인팀">
+					<input type="text" name="" id="" value="디자인팀">
 				</td>
 				<td>
 					<input type="text" name="" id="">
@@ -334,13 +321,13 @@
 				</td>
 			</tr>
 		</table>
-		
 		<ul>
-			<li><button type="button" id="backV" onclick="location.href='recruitView.html'">뒤로가기</button></li>
-			<li><button type="button" id="comM" onclick="comMod();">수정완료</button></li>
-			<li><button type="button" id="delM" onclick="delMod();">삭제</button></li>
+			<li><button type="button" id="backV" style="cursor: pointer;" onclick="location.href='recruitView.html'">뒤로가기</button></li>
+			<li><button type="button" id="comM" style="cursor: pointer;" onclick="comMod();">수정완료</button></li>
+			<li><button type="button" id="delM" style="cursor: pointer;" onclick="delMod();">삭제</button></li>
 		</ul>
 	</form>
+	
 	<script type="text/javascript">
 		/* validation */
 		function delMod() {
@@ -365,12 +352,6 @@
 		}
 		function modmails() {
 			document.modform.modmail.value = document.modform.modmail1.value;
-		}
-		function gradus() {
-			document.modform.gradu.value = document.modform.gradu1.value;
-		}
-		function gradua() {
-			document.modform.gradu2.value = document.modform.gradu3.value;
 		}
 	</script>
 </body>

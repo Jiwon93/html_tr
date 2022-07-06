@@ -33,7 +33,7 @@
 	text-indent: 16px;
 }
 
-.login > ul li input::-webkit-input-placeholder {
+.login > ul li input::-webkit-input-value {
 	font-size: 16px;
 	color: #9fa19f;
 }

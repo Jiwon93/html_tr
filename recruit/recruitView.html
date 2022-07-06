@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./css/view.css">
 	<title>상세페이지</title>
+	
 	<style type="text/css">
 	
 		body {
@@ -16,7 +17,9 @@
 </head>
 <body>
 	<form class="view" method="post" action="" id="">
-		<div style="text-align:center"><h1>[입사지원서]</h1></div>
+		<div style="text-align:center">
+			<h1>[입사지원서]</h1>
+		</div>
 		<table>
 			<tr>
 				<th>지원분야</th>
@@ -27,14 +30,13 @@
 				<td>4000</td>
 			</tr>
 		</table>
-		<br>
-		<br>	
+		<br><br>
 		<table>
 			<caption style="text-align: left;">
 				<span>□기본정보</span>
 			</caption>
 			<tr>
-				<td rowspan="4" width="150px"><img alt="한지민" src="./image/min.jpg" width="100%"></td>
+				<th rowspan="4" width="250px;"><img alt="한지민" src="./image/min.jpg" width="245px" height="195px"></th>
 				<th>성 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명</th>
 				<td>한지민</td>
 				<th>한 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;문</th>
@@ -82,9 +84,7 @@
 				 -->
 			</tr>		
 		</table>
-		<br>
-		<br>
-		
+		<br><br>
 		<table>
 			<caption style="text-align: left;">
 				<span>□학력사항 (최신이력이 가장 위로)</span>
@@ -111,8 +111,7 @@
 				<td>수원</td>
 			</tr>
 		</table>
-		<br>
-		<br>
+		<br><br>
 		<table>
 			<caption style="text-align: left;">
 				<span>□[교육연수]</span>
@@ -123,17 +122,12 @@
 				<th>연수과정 및 내용</th>
 			</tr>
 			<tr>
-				<td>2021.12.30~2022.6.22</td>
-				<td>(주)이젠 아카데미
-				<br>(서울 강남역 본원) 
-				<br>국가기간전략산업직종 훈련</td>
-				<td>
-					
-				</td>
+				<td>2021.12 ~ 2022.6</td>
+				<td>(주)이젠 아카데미</td>
+				<td>Open API활용 자바 안드로이드 웹&앱 개발자</td>
 			</tr>
 		</table>
-		<br>
-		<br>
+		<br><br>
 		<table>
 			<caption style="text-align: left;">
 				<span>□[자격사항]</span>
@@ -157,8 +151,7 @@
 				<td></td>
 			</tr>
 		</table>
-		<br>
-		<br>
+		<br><br>
 		<table>
 			<caption style="text-align: left;">
 				<span>□경력사항(4대 보험 가입 경력)</span>
@@ -170,7 +163,7 @@
 				<th>경험 및 습득역량</td>
 			</tr>
 			<tr>
-				<td>2021.01.10~2022.07.09</td>
+				<td>2021.01 ~ 2022.07</td>
 				<td>google</td>
 				<td>디자인팀</td>
 				<td></td>
@@ -188,13 +181,13 @@
 				<td></td>
 			</tr>
 		</table>
-		
 		<ul>
 			<li><button type="button" id="backV" onclick="location.href='recruitList.html'">뒤로가기</button></li>
 			<li><button type="button" id="delV" onclick="delView();">삭제</button></li>
 			<li><button type="button" id="modV" onclick="location.href='recruitModForm.html';">수정</button></li>
 		</ul>
 	</form>
+	
 	<script type="text/javascript">
 		/* validation */
 		function delView() {
