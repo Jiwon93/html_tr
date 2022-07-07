@@ -1,5 +1,10 @@
+#war {
+	width: 100%;
+} 
+
 #top {
 	text-align: center;
+	margin: 10px
 }
 
 #search {
@@ -16,6 +21,7 @@
 
 #menu {
 	height: 100px;
+	padding: 10px;
 	background-color: black;
 	color: white;
 	font-size: 30px;
@@ -25,9 +31,18 @@
 #mypage {
 	clear: both;
 	float: left;
+	height: 360px;
 	background-color: #2B2B2B;
 	color: white;
 	padding: 30px;
+}
+
+ul ul {
+	display: none;	
+}
+
+li:hover ul {
+	display: block;
 }
 
 #mypage a:link {
@@ -57,6 +72,7 @@
 
 #body {
 	float: left;
+	margin: 0 0 0 95px;
 	text-align: center;
 	text-indent: 10px;
 }
@@ -64,6 +80,7 @@
 #ffff {
 	float: right;	
 	padding: 0 0 0px;
+	margin: 7px 0 0 0;
 }
 
 #gggg ul {
@@ -100,6 +117,7 @@
 #root {
 	width: 100%;
 	height: 100px;
+	padding: 20px;
 	clear: both;
 	text-align: center;
 	background-color: black;
